@@ -105,7 +105,7 @@ p {
 }
 .main-bg{
     display: flex;
-     height: 800px; 
+     height: 700px; 
      background-color: #012E40;
      background-image: url('https://github.com/HygorMeireles/imagenssite/blob/main/main-img.jpg?raw=true');
      background-repeat: no-repeat;
@@ -144,9 +144,9 @@ p {
     font-size: 3.5rem;
 }
 .info-img {
-    max-width: 50rem;
-    float: right;
-    padding: 0 0 5px 20px;
+    max-width: 55rem;
+    display: block;
+    margin: 0 auto;
 }
 .malwares h3 {
     padding: 40px 20px 5px 0px;
@@ -162,28 +162,7 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.qualidade-item {
-    margin: 20px 10px;
-    flex: 1 1 300px;
-    color: #7C7C7C;
-    font-size: 2rem;
-}
-.qualidade h3 {
-    padding-top: 0;
-    color: #a4a4a4;
-    margin-bottom: 5px;
-    font-size: 3rem;
-    display: flex;
-    align-items: baseline;
-}
-.qualidade h3::before {
-    content: '';
-    display: block;
-    margin-right: 10px;
-    width: 8px;
-    height: 30px;
-    background-color: #122AB2;
-}
+
 
 .qualidade p {
     line-height: 1.4;
@@ -205,24 +184,16 @@ b{
     text-align: center;
     padding-bottom: 15px;
 }
-.boas-praticas {
-    display: flex;
-    justify-content:space-between;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid rgb(13, 110, 253);
-}
+
 .praticas1, .praticas2 {
     max-width: 49%;
-    border: 3px solid #EEE;
+    border: 10px solid #EEE;
     padding: 0 15px 15px 15px;
+    font-size: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.boas-praticas p {
-    padding-top: 25px;
-}
-.praticas2 .no-padding{
-    padding-top: 2px;
-}
+
 
 /*Criptografia*/
 .criptografia {
@@ -253,6 +224,19 @@ b{
     height: 200px;
     margin-top: 20px;
 }
+@media screen and (max-width: 768px){
+    .main-bg, .boas-praticas, .praticas1,.top-bar, .header, .malwares, .qualidade, .boas-praticas, .criptografia{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .praticas1, .praticas2{
+        max-width: 100%;
+    }
+}
+
+
+
 </style>
 <body>
     <!--Top-Bar-->
@@ -286,7 +270,7 @@ b{
 
     <!--Malwares-->
     <div class="malwares" id="malwares">
-        <img class="info-img" src="https://github.com/HygorMeireles/imagenssite/blob/main/info.jpg?raw=true" alt="Imagem informativa">
+        <img class="info-img" src="https://github.com/HygorMeireles/imagenssite/blob/main/26311.jpg?raw=true" alt="Imagem informativa">
         <h2>Malwares</h2>
         <p>Primeiramente, antes de falarmos sobre segurança, devemos entender do que precisamos nos proteger. Portanto, surgem as perguntas: o que são malwares? O que eles podem fazer?</p>
 
@@ -357,7 +341,7 @@ b{
     <h2 class="titulo" id="criptografia">Criptografia</h2>
     <div class="criptografia" >
         <p>A criptografia é um conjunto de técnicas e métodos utilizados para transformar informações legíveis em um formato ilegível, chamado de texto cifrado, a fim de garantir a confidencialidade, autenticidade, integridade dos dados e a segurança das comunicações online. Amplamente empregada na proteção de informações sensíveis, tanto em comunicações quanto no armazenamento de dados.</p>
-        <img class="img-cripto" src="https://github.com/HygorMeireles/imagenssite/blob/main/criptografia.png?raw=true" alt="Imagem criptografia">
+        <img class="criptografia img" src="https://github.com/HygorMeireles/imagenssite/blob/main/criptografia.png?raw=true" alt="Imagem criptografia">
         <p>Existem dois principais tipos de criptografia: a criptografia <b>simétrica</b> e a criptografia <b>assimétrica</b>. Na criptografia simétrica, a mesma chave é usada tanto para criptografar quanto para descriptografar os dados. Já na criptografia assimétrica, utiliza-se um par de chaves: uma chave pública para criptografar os dados e uma chave privada correspondente para descriptografá-los.</p>
 
         <h3>Importância da Criptografia</h3>
