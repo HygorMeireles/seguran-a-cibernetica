@@ -162,7 +162,28 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.qualidade-item {
+    margin: 20px 10px;
+    flex: 1 1 300px;
+    color: #7C7C7C;
+    font-size: 2rem;
+}
+.qualidade h3 {
+    padding-top: 0;
+    color: #a4a4a4;
+    margin-bottom: 5px;
+    font-size: 3rem;
+    display: flex;
+    align-items: baseline;
+}
+.qualidade h3::before {
+    content: '';
+    display: block;
+    margin-right: 10px;
+    width: 8px;
+    height: 30px;
+    background-color: #122AB2;
+}
 
 .qualidade p {
     line-height: 1.4;
